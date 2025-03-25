@@ -1,0 +1,58 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xaf6b3C2e2dACEE089c0F1d31878BBbf6D6A91637",
+    "txHash": "0x62d664845d1199df8b8fb504fc80b3f648fd0b4b1245cfa6b82ceb08f58830a8"
+  },
+  "proxies": [
+    {
+      "address": "0x6916f4D3827d9b7163D1346F3FafC60d36B2e288",
+      "txHash": "0x56adbefc1a8d45eaf6be826fae8a56f2f925f6c0f52e3526181156c437f9fbeb",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "1d3f38217e35d0c62eb22d5ef067f414b5c91d5709bbf811cd2c4a6f61f57e21": {
+      "address": "0xf4E47e612366e5353AbA6493D4c54FA650B8C8Bb",
+      "txHash": "0xda43dddb02cf639bffba1c6c5b32c5f328bc7ddf818687f66ea524ebf478557e",
+      "layout": {
+        "solcVersion": "0.8.21",
+        "storage": [
+          {
+            "contract": "TransferWithSignature",
+            "label": "admin",
+            "type": "t_address",
+            "src": "../project:/contracts/TransferWithSignature.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint64": {
+            "label": "uint64"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,13 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
-import "./BaseContract.sol";
+//import "./BaseContract.sol";
 
-contract ProxyContract is BaseContract{
+contract ProxyContract {
     address public implementation;
-
+     address public admin;
     constructor(address _implementation){
         implementation = _implementation;
+    }
+
+     modifier onlyAdmin(){
+        require(msg.sender == admin,"only admin can call");
+        _;
     }
 
     function setImplementation(address _newImplementation) public onlyAdmin {
